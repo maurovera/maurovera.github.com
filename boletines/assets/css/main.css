@@ -1,0 +1,200 @@
+/**
+#1abc9c
+.dark-primary-color    { background: #1976D2; }
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #536DFE; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+**/
+/**Fuente de texto
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+Se utiliza font google*/
+html{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/**Links*/
+a{
+  text-decoration: none;
+  color: #8080ff;
+
+}
+
+a:hover{
+  opacity:0.8;
+}
+
+img{
+  max-width: 100%;
+
+}
+
+/*Transformamos el titulo*/
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+/**Fondo degradado*/
+.container {
+  /*background: #06beb6;  /* fallback for old browsers */
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+
+  max-width: 950px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  position: relative;
+  padding: 1.8em;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+.actions{
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.close{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius:50%;
+  background-color: #1976D2;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  cursor:pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*celulares*/
+.content{
+  padding:1em;
+}
+td{
+  display:block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#1976D2;
+}
+th{
+  display:none;
+}
+/**A los parrafos de los locales le agregamos entre lineado*/
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+
+/**Cambiamos el color de las estrellas*/
+.fa-star {
+  color:#FF9800;
+}
+
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+
+/**Pintar las filas de las tablas
+odd: impares, even pares*/
+.table tr:nth-child(even){ background-color:#BBDEFB;
+
+
+}
+
+.title-item{
+  /*border-bottom-style:solid;
+  border-width:2px;
+  padding-bottom:1em;
+  border-color:#1976D2;*/
+  border-bottom: solid 2px #1976D2;
+  padding-bottom:1em;
+
+  font-size: 2em;
+}
+
+.position{
+  background-color: #1976D2;
+  color:white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+
+}
+
+.main-image{
+  float:left;
+  margin-right: 1em;
+  height: 200px;
+}
+
+.adress{
+  font-weight: bold;
+  color:#1976D2;
+  font-size: 1.2em;
+  margin-top: 1em;
+  display:inline-block;
+
+}
+
+@media(min-width:900px){
+  th{
+    display: table-cell;
+  }
+  td{
+    display: table-cell;
+    width: auto;
+  }
+  td:nth-of-type(){
+    padding: 1.8em;
+  }
+}
+
+@media (min-height:500px){
+  .content{
+    height: 500px;
+  }
+}
+/**Especificidad
+1. !important
+2. Atributos styles
+Selectores
+1. selectores por id
+2. selectores por clase, atributo, pseudo clases
+3. selectores de tipo y pseudo elementos*/
+
+/**position
+static, relative: a toda la pantalla,
+absolute: a todo el div padre,
+fixed,
+sticky
+top, bootom, left, right*/
